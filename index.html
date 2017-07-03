@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 1.0
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+    <title>Materialize - Material Design Admin Template</title>
+
+    <!-- Favicons-->
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
+
+
+
+    <!-- CORE CSS-->    
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/percircle.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->    
+<!--     <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection"> -->
+
+
+</head>
+
+<body>
+    <!-- Start Page Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>        
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Page Loading -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START HEADER -->
+    <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="z-depth-1" style="background-color: #055b7b">
+                <div class="nav-wrapper">
+                    <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="images/omid.svg" style="width: 200px" alt="materialize logo"></a> <span class="logo-text">Materialize</span></h1>
+
+                    <ul class="left hide-on-med-and-down">
+
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-social-notifications">
+                          <span class="lable-danger">
+                            2
+                          </span>
+                        </i>
+                        </a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light"><i class="mdi-content-markunread">
+                          <span class="lable-danger">
+                            2
+                          </span>
+                        </i>
+                        </a>
+                        </li>
+                        <!-- Dropdown Trigger -->                        
+                        <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i>
+                          <span class="lable2-danger">
+                            2
+                          </span>
+                        </a>
+                        </li>
+                        <!-- navbar search -->
+                        <li>    
+                            <a href="javascript:void(0);" class="waves-effect waves-block waves-light show-search"><i class="mdi-action-search"></i></a>                              
+                        </li>
+                        <li class="search-out">
+                            <input type="text" class="search-out-text">
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START MAIN -->
+    <div id="main">
+        <!-- START WRAPPER -->
+        <div class="wrapper">
+
+            <!-- START LEFT SIDEBAR NAV-->
+            <aside id="left-sidebar-nav">
+                <ul id="slide-out" class="side-nav fixed leftside-navigation highlight">
+                    <li class="user-details">
+                        <div class="row">
+                            <div class="col col s4 m4 l4">
+                                <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
+                            </div>
+                            <div class="col col s8 m8 l8">
+                                <ul id="profile-dropdown" class="dropdown-content">
+                                    <li><a href="#"><i class="mdi-action-face-unlock"></i> پروفایل</a>
+                                    </li>
+                                    <li><a href="#"><i class="mdi-action-settings"></i> تنظیمات</a>
+                                    </li>
+                                    <li><a href="#"><i class="mdi-communication-live-help"></i> راهنما</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="mdi-action-lock-outline"></i> بسته شدن</a>
+                                    </li>
+                                    <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> خروج</a>
+                                    </li>
+                                </ul>
+                                <a class="btn-flat dropdown-button waves-effect waves-light profile-btn" href="#" data-activates="profile-dropdown">سید میلاد<i class="mdi-navigation-arrow-drop-down left"></i></a>
+                                <p class="user-roal">رعنایی سیادت</p>
+                                <a style="display: inline-block;;padding: 0 2px" href="#" class="waves-effect waves-blue-grey darken-3 btn-flat red-text text-darken-1"><i class="mdi-action-settings-power" style="font-size: 18px"></i></a>
+                                <a style="display: inline-block;;padding: 0 2px" href="#" class="waves-effect waves-blue-grey darken-3 btn-flat"><i class="mdi-communication-forum" style="font-size: 18px"></i></a>
+                                <a style="display: inline-block;;padding: 0 2px" href="#" class="waves-effect waves-blue-grey darken-3 btn-flat grey-text text-lighten-1"><i class="mdi-communication-email" style="font-size: 18px"></i></a>
+                            </div>
+                        </div>
+
+                    </li>
+                    
+                    <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> پنل کاربری </a>
+                    </li>
+                    <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-invert-colors"></i> اطلاعات کاربری<i class="mdi-hardware-keyboard-arrow-down left" style="font-size: 20px"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="css-typography.html">اطلاعات فردی</a>
+                                        </li>                                        
+                                        <li><a href="css-icons.html">اطلاعات تماس</a>
+                                        </li>
+                                        <li><a href="css-shadow.html">تجربیات شغلی</a>
+                                        </li>
+                                        <li><a href="css-media.html">اطلاعات تحصیلی</a>
+                                        </li>
+                                        <li><a href="css-sass.html">توانمندی ها</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i> مهارت های من</a>
+                            </li>
+                            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i>درخواست همکاری با من</a>
+                            </li>
+                            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i>علاقه مندی ها</a>
+                            </li>
+                            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i>معرفی به دوستان</a>
+                            </li>
+                            <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i><span class="new badge left" data-badge-caption="جدید" style="position: relative;right: 0 !important; ">۴</span>لغو عضویت</a>
+                            </li>
+                            <li class="bold"><a href="app-widget.html" class="waves-effect waves-cyan"><i class="mdi-device-now-widgets"></i><span class="new badge left" data-badge-caption="دانلود" style="position: relative;right: 0 !important;background-color: #ff7171 ">۲</span>امار دانلود رزومه</a>
+                            </li>
+                            <!-- <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="table-basic.html">Basic Tables</a>
+                                        </li>
+                                        <li><a href="table-data.html">Data Tables</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-insert-comment"></i> Forms </a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="form-elements.html">Form Elements</a>
+                                        </li>
+                                        <li><a href="form-layouts.html">Form Layouts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-social-pages"></i> Pages</a>
+                                <div class="collapsible-body">
+                                    <ul>                                        
+                                        <li><a href="page-login.html">Login</a>
+                                        </li>
+                                        <li><a href="page-register.html">Register</a>
+                                        </li>
+                                        <li><a href="page-lock-screen.html">Lock Screen</a>
+                                        </li>
+                                        <li><a href="page-invoice.html">Invoice</a>
+                                        </li>
+                                        <li><a href="page-404.html">404</a>
+                                        </li>
+                                        <li><a href="page-500.html">500</a>
+                                        </li>
+                                        <li><a href="page-blank.html">Blank</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li> -->
+                            <!-- <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-editor-insert-chart"></i> Charts</a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a href="charts-chartjs.html">Chart JS</a>
+                                        </li>
+                                        <li><a href="charts-chartist.html">Chartist</a>
+                                        </li>
+                                        <li><a href="charts-morris.html">Morris Charts</a>
+                                        </li>
+                                        <li><a href="charts-xcharts.html">xCharts</a>
+                                        </li>
+                                        <li><a href="charts-flotcharts.html">Flot Charts</a>
+                                        </li>
+                                        <li><a href="charts-sparklines.html">Sparkline Charts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li-hover"><div class="divider"></div></li>
+                    <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
+                    <li><a href="css-grid.html"><i class="mdi-image-grid-on"></i> Grid</a>
+                    </li>
+                    <li><a href="css-color.html"><i class="mdi-editor-format-color-fill"></i> Color</a>
+                    </li>
+                    <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
+                    </li>
+                    <li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
+                    </li>                     -->
+                    <li class="li-hover"><div class="divider"></div></li>
+                    <li class="li-hover"><p class="ultra-small margin center">درصد پیشرفت رزومه</p></li>
+                    <li class="li-hover">
+                        <div class="row">
+                            <div class="col s12 m12 l12">
+                                <div class="sample-chart-wrapper">                            
+                                    <!-- <div class="ct-chart ct-golden-section" id="ct2-chart"></div> -->
+                                    <div class="center small" id="bluecircle" data-percent="78">
+                                    </div>
+                                </div>
+                                <a class="waves-effect waves-teal btn-flat center modal-trigger" href="#modal1">راهنما</a>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2 right"><i class="mdi-navigation-menu" ></i></a>
+
+            </aside>
+            <!-- END LEFT SIDEBAR NAV-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+                <!-- Modal Structure -->
+                  <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <h4>Modal Header</h4>
+                      <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                  </div>
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- START CONTENT -->
+            <section id="content">
+            
+                <!--breadcrumbs start-->
+                <div id="breadcrumbs-wrapper" style="background-color: #ecf0f5">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col s12 m12 l12">
+                        <ol class="breadcrumb left">
+                          <li><a href="#" style="color:#222"><i class="mdi-action-view-module" style="float: right;margin-left: 5px;margin-top: -3px"></i>خانه</a>
+                          </li>
+                          <li><a href="index.html" style="color:#428bca">داشبورد </a>
+                          </li>
+                        </ol>
+                        <h5 class="breadcrumbs-title">
+                            <i class="mdi-action-home Medium mdi-icon"></i>داشبورد
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--breadcrumbs end-->
+                <!--start container-->
+                <div class="container">
+
+                    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+                    <!--card stats start-->
+                    <div id="card-stats">
+                        <div class="row">
+                            <div class="col s12 m6 l3 right">
+                                <div class="card">
+                                    <div class="card-content widget-green-1">
+                                        <p class="card-stats-title"><i class="mdi-social-group-add"></i>تعداد کاربران</p>
+                                        <h4 class="card-stats-number">566</h4>
+                                        <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 15% <span class="green-text text-lighten-5">از دیروز</span>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="card-action  widget-green-1-2">
+                                        <div></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3 right">
+                                <div class="card">
+                                    <div class="card-content widget-darkblue-2">
+                                        <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>تعداد درخواست ها</p>
+                                        <h4 class="card-stats-number">$8990.63</h4>
+                                        <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 70% <span class="purple-text text-lighten-5">اخیرا</span>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="card-action widget-darkblue-2-2">
+                                        <div ></div>
+                                    </div> -->
+                                </div>
+                            </div>                            
+                            <div class="col s12 m6 l3 right">
+                                <div class="card">
+                                    <div class="card-content widget-orange-4">
+                                        <p class="card-stats-title"><i class="mdi-action-trending-up"></i> تعداد مورد علاقه ها</p>
+                                        <h4 class="card-stats-number">$806.52</h4>
+                                        <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-up"></i> 80% <span class="blue-grey-text text-lighten-5">مجموع</span>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="card-action widget-orange-4-2">
+                                        <div ></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                                <div class="card">
+                                    <div class="card-content widget-lightblue-1">
+                                        <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> تعداد درخواست ها</p>
+                                        <h4 class="card-stats-number">1806</h4>
+                                        <p class="card-stats-compare"><i class="mdi-hardware-keyboard-arrow-down"></i> 3% <span class="deep-purple-text text-lighten-5">مجموع</span>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="card-action  widget-lightblue-1-2">
+                                        <div ></div>
+                                    </div> -->
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <!--card stats end-->
+
+                    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+                    
+
+
+                </div>
+                <!--end container-->
+            </section>
+            <!-- END CONTENT -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!-- START RIGHT SIDEBAR NAV-->
+            <aside id="right-sidebar-nav">
+                <ul id="chat-out" class="side-nav rightside-navigation">
+                    <li class="li-hover">
+                    <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+                    <div id="right-search" class="row">
+                        <form class="col s12">
+                            <div class="input-field">
+                                <i class="mdi-action-search prefix"></i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Search</label>
+                            </div>
+                        </form>
+                    </div>
+                    </li>
+                    <li class="li-hover">
+                        <ul class="chat-collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent Activity</div>
+                            <div class="collapsible-body recent-activity">
+                                <div class="recent-activity-list chat-out-list row">
+                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i>
+                                    </div>
+                                    <div class="col s9 recent-activity-list-text">
+                                        <a href="#">just now</a>
+                                        <p>Jim Doe Purchased new equipments for zonal office.</p>
+                                    </div>
+                                </div>
+                                <div class="recent-activity-list chat-out-list row">
+                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i>
+                                    </div>
+                                    <div class="col s9 recent-activity-list-text">
+                                        <a href="#">Yesterday</a>
+                                        <p>Your Next flight for USA will be on 15th August 2015.</p>
+                                    </div>
+                                </div>
+                                <div class="recent-activity-list chat-out-list row">
+                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                                    </div>
+                                    <div class="col s9 recent-activity-list-text">
+                                        <a href="#">5 Days Ago</a>
+                                        <p>Natalya Parker Send you a voice mail for next conference.</p>
+                                    </div>
+                                </div>
+                                <div class="recent-activity-list chat-out-list row">
+                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
+                                    </div>
+                                    <div class="col s9 recent-activity-list-text">
+                                        <a href="#">Last Week</a>
+                                        <p>Jessy Jay open a new store at S.G Road.</p>
+                                    </div>
+                                </div>
+                                <div class="recent-activity-list chat-out-list row">
+                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
+                                    </div>
+                                    <div class="col s9 recent-activity-list-text">
+                                        <a href="#">5 Days Ago</a>
+                                        <p>Natalya Parker Send you a voice mail for next conference.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
+                            <div class="collapsible-body sales-repoart">
+                                <div class="sales-repoart-list  chat-out-list row">
+                                    <div class="col s8">Target Salse</div>
+                                    <div class="col s4"><span id="sales-line-1"></span>
+                                    </div>
+                                </div>
+                                <div class="sales-repoart-list chat-out-list row">
+                                    <div class="col s8">Payment Due</div>
+                                    <div class="col s4"><span id="sales-bar-1"></span>
+                                    </div>
+                                </div>
+                                <div class="sales-repoart-list chat-out-list row">
+                                    <div class="col s8">Total Delivery</div>
+                                    <div class="col s4"><span id="sales-line-2"></span>
+                                    </div>
+                                </div>
+                                <div class="sales-repoart-list chat-out-list row">
+                                    <div class="col s8">Total Progress</div>
+                                    <div class="col s4"><span id="sales-bar-2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
+                            <div class="collapsible-body favorite-associates">
+                                <div class="favorite-associate-list chat-out-list row">
+                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                                    </div>
+                                    <div class="col s8">
+                                        <p>Eileen Sideways</p>
+                                        <p class="place">Los Angeles, CA</p>
+                                    </div>
+                                </div>
+                                <div class="favorite-associate-list chat-out-list row">
+                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                                    </div>
+                                    <div class="col s8">
+                                        <p>Zaham Sindil</p>
+                                        <p class="place">San Francisco, CA</p>
+                                    </div>
+                                </div>
+                                <div class="favorite-associate-list chat-out-list row">
+                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                                    </div>
+                                    <div class="col s8">
+                                        <p>Renov Leongal</p>
+                                        <p class="place">Cebu City, Philippines</p>
+                                    </div>
+                                </div>
+                                <div class="favorite-associate-list chat-out-list row">
+                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
+                                    </div>
+                                    <div class="col s8">
+                                        <p>Weno Carasbong</p>
+                                        <p>Tokyo, Japan</p>
+                                    </div>
+                                </div>
+                                <div class="favorite-associate-list chat-out-list row">
+                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
+                                    </div>
+                                    <div class="col s8">
+                                        <p>Nusja Nawancali</p>
+                                        <p class="place">Bangkok, Thailand</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <!-- LEFT RIGHT SIDEBAR NAV-->
+
+        </div>
+        <!-- END WRAPPER -->
+        <a href="#modal5" class="btn-floating tooltipped btn-large waves-effect waves-light add-resume pink accent-3 modal-trigger" data-position="top" data-tooltip="تکمیل رزومه" ><i class="mdi-content-add"></i></a>
+        <div id="modal5" class="modal bottom-sheet white z-depth-5">
+                  <div class="modal-content">
+                    <h5 class="center" style="padding: 15px 0px;color: #467298"><i class="mdi-action-assignment" style="font-size: 35px;margin: 0px 0px 0px 10px;color: #555"></i>تکمیل رزومه</h5>
+                    <ul class="collection">
+                      <li class="collection-item avatar">
+                        <a href="#"><h5 class="title center" style="color: #467298">اطلاعات فردی</h5></a>
+                      </li>
+                      <li class="collection-item avatar">
+                        <a href="#">
+                        <h5 class="title center" style="color: #467298">اطلاعات تماس</h5>
+                        </a>
+                      </li>
+                      <li class="collection-item avatar">
+                        <a href="#">
+                        <h5 class="title center" style="color: #467298">تجربیات شغلی</h5>
+                        </a>
+                      </li>
+                      <li class="collection-item avatar">
+                        <a href="#">
+                        <h5 class="title center" style="color: #467298">اطلاعات تحصیلی</h5>
+                        </a>
+                      </li>
+                      <li class="collection-item avatar">
+                        <a href="#">
+                        <h5 class="title center " style="color: #467298">توانمندی ها</h5>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                
+    </div>
+    <!-- END MAIN -->
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START FOOTER -->
+    <footer class="page-footer">
+        <div class="container">
+            
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/plugins/percircle/percircle.min.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+       
+
+    <!-- chartist -->
+    <!-- <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>  -->  
+
+    <!-- chartjs -->
+<!--     <script type="text/javascript" src="js/plugins/chartjs/chart.min.js"></script>
+    <script type="text/javascript" src="js/plugins/chartjs/chart-script.js"></script> -->
+
+    <!-- sparkline -->
+<!--     <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script> -->
+    
+    <!--jvectormap-->
+   <!--  <script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script type="text/javascript" src="js/plugins/jvectormap/vectormap-script.js"></script> -->
+    
+    
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <!-- Toast Notification -->
+    <script type="text/javascript">
+
+    // Toast Notification
+    $(window).load(function() {
+        setTimeout(function() {
+            Materialize.toast('<span>به سیستم کاریابی امید خوش آمدید</span>', 3000);
+        }, 2000);
+        // setTimeout(function() {
+        //     Materialize.toast('<span>You can swipe me too!</span>', 3000);
+        // }, 5500);
+        // setTimeout(function() {
+        //     Materialize.toast('<span>You have new order.</span><a class="btn-flat yellow-text" href="#">Read<a>', 3000);
+        // }, 18000);
+    });
+    </script>
+    <script type="text/javascript">
+
+        $(function(){ 
+            $("[id$='circle']").percircle();
+
+        });
+
+    </script>
+</body>
+
+</html>
